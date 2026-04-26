@@ -49,7 +49,7 @@ analyse_ventes/
 ## ⚙️ Prérequis
 
 * Python 3.x
-* VS Code ou tout autre éditeur
+* VS Code 
 
 ### (Optionnel)
 
@@ -152,9 +152,6 @@ Ce projet est réalisé dans un cadre académique.
 
 ---
 
-## 💡 Remarque
-
-> "Un projet sans documentation est un projet inutilisable."
 
 ---
 
