@@ -1,6 +1,9 @@
 import pandas as  pd
 import numpy as  np
+import os
+import matplotlib.pyplot as plt
 
+os.chdir(r'C:\Users\yousbachi\OneDrive\Bureau\logiciel\PFA')
 
 #generate vente.csv file----------------------------------------------------------
 data = {
@@ -31,3 +34,18 @@ print(df[['ca_net','tva']].head())
 ca_total = df["ca_net"].sum()
 print("----------CA TOTAL-------------")
 print("CA TOTAL :", ca_total)
+
+#Identifiez l’ID du produit ayant généré le plus gros bénéfice
+best_product = df.loc[df['ca_net'].idxmax()]
+print("----------Identifiez l’ID du produit ayant généré le plus gros bénéfice-------------")
+print("ID du produit ayant généré le plus gros bénéfice :", best_product['ID'])
+
+df.to_csv('resultats_final.csv', index=False)
+print("resultats_final.csv ")
+
+
+print(os.getcwd())
+df.to_csv(r'C:\Users\yousbachi\OneDrive\Bureau\logiciel\PFA\resultats_final.csv', index=False)
+print(" resultats_final.csv ")
+
+print(os.getcwd())
