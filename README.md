@@ -124,8 +124,8 @@ resultats_final.csv
 ## 📊 Exemple de sortie
 
 ```id="outputexample"
-ID,Produit,Prix,Quantite,Remise,CA_Brut,CA_Net,TVA
-101,Smartphone,599.99,3,10,1799.97,1619.97,323.99
+ID,Prix,Quantite,Remise,CA_Brut,CA_Net,TVA
+101,599.99,3,10,1799.97,1619.97,323.99
 ```
 
 ---
