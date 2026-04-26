@@ -49,3 +49,16 @@ df.to_csv(r'C:\Users\yousbachi\OneDrive\Bureau\logiciel\PFA\resultats_final.csv'
 print(" resultats_final.csv ")
 
 print(os.getcwd())
+
+
+print(df.columns)
+plt.figure(figsize=(12, 6))
+plt.bar(df['ID'].astype(str), df['ca_net'], color='steelblue')
+plt.title('CA Net par Produit')
+plt.xlabel('ID Produit')
+plt.ylabel('CA Net (TND)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('graphique_CA.png')
+plt.show()
+print("✅ Chart saved!")
