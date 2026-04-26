@@ -86,10 +86,10 @@ pip install matplotlib
 Le fichier `ventes.csv` doit respecter le format suivant :
 
 ```id="formatcsv"
-ID,Produit,Prix,Quantite,Remise
-101,Smartphone,599.99,3,10
-102,Casque,49.99,2,5
-103,Clavier,19.99,5,0
+ID,Prix,Quantite,Remise
+101,599.99,3,10
+102,49.99,2,5
+103,19.99,5,0
 ```
 
 ---
