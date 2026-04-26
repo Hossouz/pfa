@@ -93,7 +93,7 @@ ID,Prix,Quantite,Remise
 Dans le terminal :
 
 ```bash id="runproject"
-python main.py
+python pfa.py
 ```
 
 ---
