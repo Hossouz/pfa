@@ -39,16 +39,10 @@ Face à l’augmentation du volume de données, l’utilisation d’un tableur c
 ```id="projstruct"
 analyse_ventes/
 │
-├── src/
-│   └── pfa.py
-│
-├── data/
-│   ├── ventes.csv
-│   └── resultats_final.csv
-│
-├── outputs/
-│   └── graphique_CA.png
-│
+├── pfa.py
+├── ventes.csv
+├── resultats_final.csv
+├── graphique_CA.png
 ├── requirements.txt
 ├── README.md
 └── .gitignore
