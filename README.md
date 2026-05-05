@@ -2,9 +2,6 @@
 Automatisation des Ventes , Python script that automates e-commerce sales analysis  reads CSV data, calculates revenue (CA Brut, CA Net), applies discounts, computes TVA (20%), identifies the best-selling product, and exports results. Built with Pandas &amp; Matplotlib
 # 📊 Analyse des ventes – Python
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![CSV](https://img.shields.io/badge/Data-CSV-green)
-![Status](https://img.shields.io/badge/Status-Terminé-success)
 
 ---
 
