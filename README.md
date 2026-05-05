@@ -144,7 +144,8 @@ ID,Prix,Quantite,Remise,CA_Brut,CA_Net,TVA
 ## 👩‍💻 Auteur
 
 * Nom : Amani Benzarti 
-        Housseine Yousbachi 
+        Housseine Yousbachi
+        Rayen Razgui
 * Niveau : 2ᵉ année Mathématiques Appliquées & Data Science
 * Année universitaire : 2025-2026
 
