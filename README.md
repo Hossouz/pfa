@@ -152,7 +152,6 @@ ID,Prix,Quantite,Remise,CA_Brut,CA_Net,TVA
 
 Ce projet est réalisé dans un cadre académique.
 
----
 
 
 ---

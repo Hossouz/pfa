@@ -3,11 +3,11 @@ import numpy as  np
 import os
 import matplotlib.pyplot as plt
 
-os.chdir(r'C:\Users\yousbachi\OneDrive\Bureau\logiciel\PFA')
 
 #generate vente.csv file----------------------------------------------------------
+'''
 data = {
-    'ID'       : range(101, 151),
+    'ID'       : range(1, 51),
     'prix'     : np.random.uniform(5, 600, 50).round(2),
     'quantite' : np.random.randint(1, 20, 50),
     'remise'   : np.random.choice([0, 5, 10, 15, 20], 50)
@@ -15,7 +15,23 @@ data = {
 df = pd.DataFrame(data)
 df.to_csv('ventes.csv', index=False)
 df = pd.read_csv('ventes.csv')
-print(df.head())
+'''
+NB_PRODUITS = int(input("Entrez le nombre de produits à générer : "))
+
+# =========================
+# GENERATION ALEATOIRE
+# =========================
+data = {
+    'ID': range(101, 101 + NB_PRODUITS),
+    'prix': np.random.uniform(5, 600, NB_PRODUITS).round(2),
+    'quantite': np.random.randint(1, 20, NB_PRODUITS),
+    'remise': np.random.choice([0, 5, 10, 15, 20], NB_PRODUITS)
+}
+df = pd.DataFrame(data)
+df.to_csv('ventes.csv', index=False)
+df = pd.read_csv('ventes.csv')
+
+print(df.head(len(df)))
 #Calcule de Chiffre d’Affaires Brut (Prix × Quantité) pour chaque ligne.
 df["Chiffre d'affaires Brut"] = df["prix"] * df["quantite"]
 print("----------Calcule de Chiffre d’Affaires Brut (Prix × Quantité) pour chaque ligne.-------------")
