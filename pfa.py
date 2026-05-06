@@ -5,17 +5,7 @@ import matplotlib.pyplot as plt
 
 
 #generate vente.csv file----------------------------------------------------------
-'''
-data = {
-    'ID'       : range(1, 51),
-    'prix'     : np.random.uniform(5, 600, 50).round(2),
-    'quantite' : np.random.randint(1, 20, 50),
-    'remise'   : np.random.choice([0, 5, 10, 15, 20], 50)
-}
-df = pd.DataFrame(data)
-df.to_csv('ventes.csv', index=False)
-df = pd.read_csv('ventes.csv')
-'''
+
 NB_PRODUITS = int(input("Entrez le nombre de produits à générer : "))
 
 # =========================
@@ -59,22 +49,21 @@ print("ID du produit ayant généré le plus gros bénéfice :", best_product['I
 df.to_csv('resultats_final.csv', index=False)
 print("resultats_final.csv ")
 
-
+''''''
 print(os.getcwd())
-df.to_csv(r'C:\Users\yousbachi\OneDrive\Bureau\logiciel\PFA\resultats_final.csv', index=False)
-print(" resultats_final.csv ")
 
-print(os.getcwd())
 
 
 print(df.columns)
-plt.figure(figsize=(12, 6))
-plt.bar(df['ID'].astype(str), df['ca_net'], color='pink')
-plt.title('CA Net par Produit')
-plt.xlabel('ID Produit')
-plt.ylabel('CA Net (TND)')
-plt.xticks(rotation=45)
+
+plt.figure(figsize=(20, 6))
+plt.plot(df['ID'], df['ca_net'], color='hotpink', linewidth=1)
+plt.fill_between(df['ID'], df['ca_net'], alpha=0.3, color='pink')  
+plt.title('CA Net par Produit', fontsize=16)
+plt.xlabel('ID Produit', fontsize=12)
+plt.ylabel('CA Net (TND)', fontsize=12)
+plt.xticks(fontsize=8)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('graphique_CA.png')
-plt.show()
+plt.savefig('graphique_CA.png', dpi=300)
+os.startfile('graphique_CA.png')
